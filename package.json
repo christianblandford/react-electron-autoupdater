@@ -1,0 +1,33 @@
+{
+  "name": "react-electron-autoupdater",
+  "version": "1.0.0",
+  "description": "Easy electron autoUpdate event handling for React renderer processes.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
+  "repository": "https://github.com/christianblandford/electron-github-autoupdater",
+  "author": "Christian Blandford",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/react": "^17.0.38",
+    "electron": "^16.0.7",
+    "eslint": "^7.6.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "prettier": "^2.3.0",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "react": "^17.0.2"
+  }
+}
