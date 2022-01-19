@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.clearCache = exports.unsafeQuitAndInstall = exports.unsafeCheckForUpdates = exports.useElectronAutoUpdater = void 0;
+exports.getVersion = exports.clearCache = exports.unsafeQuitAndInstall = exports.unsafeCheckForUpdates = exports.useElectronAutoUpdater = void 0;
 var electron_1 = require("electron");
 var react_1 = require("react");
 var channelName = 'ElectronAutoUpdater';
@@ -65,3 +65,8 @@ var clearCache = function () {
     electron_1.ipcRenderer.invoke("".concat(channelName, ".clearCache"));
 };
 exports.clearCache = clearCache;
+// Gets the current app version from electron
+var getVersion = function () {
+    return electron_1.ipcRenderer.sendSync("".concat(channelName, ".getCurrentVersion"));
+};
+exports.getVersion = getVersion;

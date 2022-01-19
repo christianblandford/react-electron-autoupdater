@@ -16,4 +16,5 @@ export declare const useElectronAutoUpdater: () => {
 export declare const unsafeCheckForUpdates: () => void;
 export declare const unsafeQuitAndInstall: () => void;
 export declare const clearCache: () => void;
+export declare const getVersion: () => any;
 export {};

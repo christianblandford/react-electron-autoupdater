@@ -83,3 +83,8 @@ export const unsafeQuitAndInstall = () => {
 export const clearCache = () => {
   ipcRenderer.invoke(`${channelName}.clearCache`)
 }
+
+// Gets the current app version from electron
+export const getVersion = () => {
+  return ipcRenderer.sendSync(`${channelName}.getCurrentVersion`)
+}

@@ -55,9 +55,9 @@ As events are emitted, this object will be updated with their values and data. T
 
 Function that alerts main process to check for updates. Invokes `ElectronAutoUpdater.checkForUpdates`.
 
-### checkForUpdates
+### getVersion
 
-Function that alerts main process to check for updates. Invokes `ElectronAutoUpdater.checkForUpdates`.
+Function that gets current app version from electron. Sends sync message to IPC channel: `ElectronAutoUpdater.getCurrentVersion`.
 
 ## Updater Statuses
 
